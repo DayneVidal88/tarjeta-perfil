@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7ec8cb;
+}
+
+/* Tarjeta principal */
+.tarjeta-perfil {
+  width: 300px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 50px;
+  background-color: #85a7bd;
+  text-align: center;
+  position: relative; /* clave para el badge */
+  padding: 20px;
+}
+
+/* Avatar */
+.avatar-contenedor {
+  width: 120px;
+  height: 120px;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.avatar-contenedor img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Información del usuario */
+.info-usuario h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info-usuario p {
+  margin-bottom: 15px;
+  color: #393939;
+  font-size: 0.9rem;
+}
+
+/* Botones de acción */
+.acciones span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #6c97c4;
+  color: #000000;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.acciones span:hover {
+  background-color: #0056b3;
+}
+
+
+/* Badge de estado */
+.badge-online {
+  width: 15px;
+  height: 15px;
+  background-color: #28a745; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;   /* ajusta según tu avatar */
+  right: 100px; /* ajusta según tu avatar */
+  border: 2px solid #fff; /* borde blanco para contraste */
+}
